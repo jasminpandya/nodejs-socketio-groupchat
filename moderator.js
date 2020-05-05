@@ -24,7 +24,6 @@ io.sockets.on('connection', function(socket) {
         for(index in sockets){
             sockets[index].emit(message.event, message);
         }        
-        // io.emit('chat_message', '<strong>' + socket.username + '</strong>: ' + message);
     });
 
 });
